@@ -496,3 +496,27 @@ section {
 .footer-legal { display: flex; gap: 1.5rem; }
 .footer-legal a { font-size: 0.875rem; color: rgba(255,255,255,0.5); transition: color 0.3s; }
 .footer-legal a:hover { color: #fff; }
+
+
+/* ============================= */
+/* MEET OUR EXPERTS - BLUE BG   */
+/* ============================= */
+
+#team {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+#team .section-title,
+#team .section-desc {
+  color: #ffffff;
+}
+
+#team .team-role {
+  color: #93c5fd; /* light blue accent */
+}
+
+#team .team-card p {
+  color: rgba(255,255,255,0.75);
+}
