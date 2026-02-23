@@ -238,48 +238,56 @@ img { max-width: 100%; display: block; }
 .service-list.list-accent li::before { color: var(--accent); }
 
 /* TOOLS */
-<!-- ============================= -->
-<!-- TOOLS & PLATFORMS SECTION -->
-<!-- ============================= -->
+/* =============================== */
+/* TOOLS & PLATFORMS SECTION FIX */
+/* =============================== */
 
-<section class="section section-white" id="tools">
-  <div class="container">
+#tools {
+  padding: 100px 0;
+  background: #ffffff;
+}
 
-    <!-- Section Header -->
-    <div class="section-header">
-      <h2 class="section-title">
-        Tools & Platforms We Use
-      </h2>
-      <p class="section-desc">
-        We leverage industry-leading data and prospecting tools to ensure 
-        accurate targeting, verified contact information, and high-performing 
-        outreach campaigns.
-      </p>
-    </div>
+#tools .section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
 
-    <!-- Tools Grid -->
-    <div class="tools-grid">
+#tools .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
 
-      <span class="tool-pill">ZoomInfo</span>
-      <span class="tool-pill">Crunchbase</span>
-      <span class="tool-pill">Apollo</span>
-      <span class="tool-pill">Hunter</span>
-      <span class="tool-pill">NeverBounce</span>
-      <span class="tool-pill">EmailListVerify</span>
-      <span class="tool-pill">Hoovers</span>
-      <span class="tool-pill">Manta</span>
-      <span class="tool-pill">Owler</span>
-      <span class="tool-pill">AngelList</span>
-      <span class="tool-pill">LinkedIn Sales Navigator</span>
-      <span class="tool-pill">Clearbit</span>
-      <span class="tool-pill">Lusha</span>
-      <span class="tool-pill">RocketReach</span>
-      <span class="tool-pill">Snov.io</span>
+#tools .section-desc {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+}
 
-    </div>
+#tools .tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
 
-  </div>
-</section>
+#tools .tool-pill {
+  padding: 10px 20px;
+  background: #f1f5f9;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+#tools .tool-pill:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  transform: translateY(-3px);
+}
 /* WHY CHOOSE US */
 .why-us-grid { display: flex; flex-direction: column; gap: 4rem; align-items: center; }
 @media(min-width:1024px) { .why-us-grid { flex-direction: row; } }
