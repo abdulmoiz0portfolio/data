@@ -460,6 +460,13 @@ img { max-width: 100%; display: block; }
   display: flex; flex-direction: column; align-items: center; gap: 1rem;
 }
 @media(min-width:768px) { .footer-bottom { flex-direction: row; justify-content: space-between; } }
+/* =============================== */
+/* WHITE SECTION VARIANT */
+/* =============================== */
+
+.section-white {
+  background: #ffffff;
+}
 .footer-bottom p { font-size: 0.875rem; color: rgba(255,255,255,0.5); }
 .footer-legal { display: flex; gap: 1.5rem; }
 .footer-legal a { font-size: 0.875rem; color: rgba(255,255,255,0.5); transition: color 0.3s; }
