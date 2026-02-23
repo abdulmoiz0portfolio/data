@@ -151,37 +151,56 @@ img { max-width: 100%; display: block; }
 @media(max-width:640px) { .hero-title { font-size: 2.5rem; } .hero { padding: 8rem 0 3rem; } }
 
 /* SECTIONS */
-<section class="tools-section">
-  <div class="container">
+/* =============================== */
+/* TOOLS & PLATFORMS SECTION FIX */
+/* =============================== */
 
-    <div class="tools-header">
-      <h2>Tools & Platforms We Use</h2>
-      <p>
-        We leverage industry-leading data and prospecting tools to ensure accurate targeting,
-        verified contact information, and high-performing outreach campaigns.
-      </p>
-    </div>
+#tools {
+  padding: 100px 0;
+  background: #ffffff;
+}
 
-    <div class="tools-grid">
-      <span>ZoomInfo</span>
-      <span>Crunchbase</span>
-      <span>Apollo</span>
-      <span>Hunter</span>
-      <span>NeverBounce</span>
-      <span>EmailListVerify</span>
-      <span>Hoovers</span>
-      <span>Manta</span>
-      <span>Owler</span>
-      <span>AngelList</span>
-      <span>LinkedIn Sales Navigator</span>
-      <span>Clearbit</span>
-      <span>Lusha</span>
-      <span>RocketReach</span>
-      <span>Snov.io</span>
-    </div>
+#tools .section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
 
-  </div>
-</section>
+#tools .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+#tools .section-desc {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+}
+
+#tools .tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+#tools .tool-pill {
+  padding: 10px 20px;
+  background: #f1f5f9;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+#tools .tool-pill:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  transform: translateY(-3px);
+}
 /* SERVICES */
 .services-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
 @media(min-width:768px) { .services-grid { grid-template-columns: 1fr 1fr; } }
