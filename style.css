@@ -237,6 +237,31 @@ img { max-width: 100%; display: block; }
 }
 .service-list.list-accent li::before { color: var(--accent); }
 
+/* GLOBAL SECTION SPACING FIX */
+.section {
+  padding: 120px 0;
+  position: relative;
+}
+
+/* Ensure sections don’t collapse into each other */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix contact overlap */
+#contact {
+  background: var(--bg);
+  margin-top: 60px;
+}
+
+/* Prevent negative margin collapse from previous section */
+.gallery-section,
+#gallery {
+  margin-bottom: 0;
+  padding-bottom: 120px;
+}
+
 /* TOOLS */
 /* =============================== */
 /* TOOLS & PLATFORMS SECTION FIX */
