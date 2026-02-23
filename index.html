@@ -392,44 +392,52 @@
       <div class="contact-form-card">
         <h3>Send us a message</h3>
 
-        <form action="https://formsubmit.co/contact.northbridgesolution@gmail.com,info.thesignaturedetailing@gmail.com" method="POST">
+       <form action="https://formsubmit.co/contact.northbridgesolution@gmail.com" method="POST">
 
-          <!-- Hidden Settings -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New Website Inquiry - NorthBridge Data Solutions">
-          <input type="hidden" name="_template" value="table">
+  <!-- Hidden Config -->
+  <input type="hidden" name="_cc" value="secondemail@gmail.com">
+  <input type="hidden" name="_subject" value="New Lead - NorthBridge Data Solutions">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
 
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" name="First Name" placeholder="John" required>
-            </div>
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" name="Last Name" placeholder="Doe" required>
-            </div>
-          </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" name="First Name" placeholder="John" required>
+    </div>
 
-          <div class="form-group">
-            <label>Work Email</label>
-            <input type="email" name="Email" placeholder="john@company.com" required>
-          </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" name="Last Name" placeholder="Doe" required>
+    </div>
+  </div>
 
-          <div class="form-group">
-            <label>Company Name</label>
-            <input type="text" name="Company" placeholder="Acme Corp" required>
-          </div>
+  <div class="form-group">
+    <label>Work Email</label>
+    <input type="email" name="Email" placeholder="john@company.com" required>
+  </div>
 
-          <div class="form-group">
-            <label>How can we help?</label>
-            <textarea name="Message" placeholder="Tell us about your lead generation goals..." required></textarea>
-          </div>
+  <!-- Phone Number (NOT Required, No Optional Text) -->
+  <div class="form-group">
+    <label>WhatsApp Number</label>
+    <input type="text" name="WhatsApp Number" placeholder="+1 234 567 890">
+  </div>
 
-          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;border-radius:12px">
-            Send Message
-          </button>
+  <div class="form-group">
+    <label>Company Name</label>
+    <input type="text" name="Company" placeholder="Acme Corp" required>
+  </div>
 
-        </form>
+  <div class="form-group">
+    <label>How can we help?</label>
+    <textarea name="Message" placeholder="Tell us about your lead generation goals..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg" style="width:100%;border-radius:12px">
+    Send Message
+  </button>
+
+</form>
 
       </div>
 
