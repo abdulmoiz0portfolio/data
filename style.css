@@ -68,16 +68,40 @@ img { max-width: 100%; display: block; }
   font-size: 1.125rem; letter-spacing: -0.025em; white-space: nowrap;
 }
 .desktop-nav { display: none; align-items: center; gap: 2rem; }
+/* NAVBAR LINKS + HOVER UNDERLINE EFFECT */
 .nav-link { 
-  /* FIX: Changed 1rem to 16px and added stability properties */
   font-size: 16px; 
   font-weight: 700; 
   color: var(--text); 
-  transition: color 0.3s; 
+  transition: color 0.3s ease; 
   display: inline-block;
   white-space: nowrap;
+  position: relative; /* Underline ko apni jagah rakhne ke liye zaroori */
+  padding-bottom: 4px; /* Text aur line ke darmiyan thoda fasla */
 }
-.nav-link:hover { color: var(--accent); }
+
+/* Ye line banayega jo shuru mein 0 width ki hogi */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hover karne par text ka color change hoga */
+.nav-link:hover { 
+  color: var(--accent); 
+}
+
+/* Hover karne par line poori draw ho jayegi */
+.nav-link:hover::after {
+  width: 100%;
+}
 .mobile-toggle { display: block; padding: 0.5rem; background: none; border: none; cursor: pointer; color: var(--text); }
 .mobile-nav {
   display: none; position: absolute; top: 100%; left: 0; right: 0;
